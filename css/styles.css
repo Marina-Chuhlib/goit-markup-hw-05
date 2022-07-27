@@ -589,6 +589,46 @@ nav {
   line-height: 1.88;
 }
 
+.product-thumb:hover::before {
+  opacity: 1;
+}
+.product-thumb {
+  position: relative;
+}
+.product-thumb::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+.a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  min-width: 322px;
+  min-height: 168px;
+}
+
+.a:hover {
+  opacity: 1;
+}
+
 /* Footer */
 
 .desc-footer {
