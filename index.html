@@ -21,8 +21,10 @@
         <nav>
           <a href="./index.html" class="logo">Web <span class="desc">Studio</span> </a>
           <ul class="nav list">
-            <li class="nav-lists"><a href="./index.html" class="nav-link current">Студия</a></li>
-            <li class="nav-lists"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+            <li class="nav-lists">
+              <a href="./index.html" class="nav-link current">Студия</a>
+            </li>
+            <li class="nav-lists"><a href="./portfolio.html" class="nav-link">Портфолио </a></li>
             <li class="nav-lists"><a href="#contact" class="nav-link">Контакты</a></li>
           </ul>
         </nav>
@@ -52,10 +54,7 @@
         <div class="conteiner hero-block">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="modal-button" data-modal-open>Заказать услугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button type="button" data-modal-close>Закрыть</button>
-            </div>
+          
           </div>
         </div>
       </section>
@@ -118,34 +117,49 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="preview list">
             <li class="work-list">
-              <a href="./index.html">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Работа за компьютером"
-                  width="370"
-                  height="294"
-                  class="img"
-                />
-              </a>
+              <div class="work-subtex-list-1">
+                <a href="./index.html">
+                  <div class="work-subtext">
+                    <img
+                      src="./images/box1.jpg"
+                      alt="Работа за компьютером"
+                      width="370"
+                      height="294"
+                      class="img"
+                    />
+                    <div class="work-sub-text"><p>Десктопные приложения</p></div>
+                  </div>
+                </a>
+              </div>
             </li>
+
             <li class="work-list">
               <a href="./index.html">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Ноутбук на столе и телефон в руках"
-                  width="370"
-                  height="294"
-                />
+                <div class="work-subtext">
+                  <img
+                    src="./images/box2.jpg"
+                    alt="Ноутбук на столе и телефон в руках"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="work-sub-text"><p>Мобильные приложения</p></div>
+                </div>
               </a>
             </li>
+
             <li class="work-list">
               <a href="./index.html">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Спектр цвета на планшете"
-                  width="370"
-                  height="294"
-                />
+                <div class="work-subtext">
+                  <img
+                    src="./images/box3.jpg"
+                    alt="Спектр цвета на планшете"
+                    width="370"
+                    height="294"
+                    class="work-list-link"
+                  />
+
+                  <div class="work-sub-text"><p>Дизайнерскиее решения</p></div>
+                </div>
               </a>
             </li>
           </ul>
@@ -443,6 +457,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-close-modal "> </use>
+          </svg>
+        </button>
+      </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
