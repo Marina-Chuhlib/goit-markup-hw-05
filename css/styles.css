@@ -768,11 +768,6 @@ address {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal-button {
-  padding: 0;
-  border: 0;
-}
-
 .backdrop.is-hidden {
   transform: translate(-50%, -50%) scale(0.7);
 
@@ -798,14 +793,25 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-icon {
+.modal-close-button {
   position: absolute;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
   top: 8px;
   right: 8px;
-
-  width: 18px;
-  height: 18px;
-
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-icon {
+  width: 11px;
+  height: 11px;
 }
